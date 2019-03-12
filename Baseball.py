@@ -11,4 +11,4 @@ for i in range(3):
     overall_speed_of_ball = speed_of_bat - speed_of_pitch
     while launch_angle >= 0:
         print "hit in play"
-        
+
