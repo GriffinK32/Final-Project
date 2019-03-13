@@ -1,7 +1,16 @@
-# The Hitting Metrics of Baseball
-# Korbin Griffin
+'''
+Korbin Griffin
+3/13/19
+The Hitting Metrics of Baseball
+Final Project
+All work is done with association with Logan Pennock
+This code is to determine if the team up to bat will get a hit or not.
+It also determines if the hit will either be a single, double, triple, or home run.
+It is able to determine this by using the speed of the pitch, launch angle, speed of bat, and speed of outfielder.
+'''
 
-bat = x
+
+
 
 for i in range(3):
     speed_of_pitch = int(input("What is the speed of the pitch?: "))
@@ -11,15 +20,38 @@ for i in range(3):
     overall_speed_of_ball = speed_of_bat - speed_of_pitch
     while launch_angle >= 0:
         print("hit in play")
-        if launch_angle >= 5:
-            print ("You're Out!")
+        if launch_angle <= 5:
+            print("You're Out!")
             break
-        elif launch_angle == (6,15):
-            x = print ("You Got a Single!")
+        elif launch_angle <= 30 and launch_angle >= 6:
+            x = print("You Got a Single!")
             break
         else:
             print("you hit high enough to get more than a single")
-    
-
+            x = True
+            break
+# Uses overall_speed_of_ball and launch_angle to determine if infield or not
+    while x == True:
+        if overall_speed_of_ball  >= 20 and launch_angle <= 50:
+            print("you got a single!")
+            break
+        elif overall_speed_of_ball >= 21 and overall_speed_of_ball <= 60 and launch_angle >= 91:
+            print("You got to the outfield")
+            ball_catch = overall_speed_of_ball / speed_of_outfielder
+# Uses ball_catch to determine if the outfielder can reach the ball in time
+            if ball_catch <= 7:
+                print ("ball caught")
+                break
+            elif ball_catch >= 8 and ball_catch <= 10:
+                print("You got a single")
+            elif ball_catch >= 11 and ball_catch <= 17:
+                print("You got a double")
+                break
+            elif ball_catch >= 18 and ball_catch <= 30:
+                print("You got a triple")
+                break
+            else:
+                print("Home Run!")
+                break
 
 
