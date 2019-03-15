@@ -31,7 +31,7 @@ for i in range(3):
     overall_speed_of_ball = speed_of_bat - speed_of_pitch
 # This For Loop shows all of the different metrics i'm using in my code.
     while launch_angle >= 0:
-        print("hit in play")
+        print("Hit in play")
         if launch_angle <= 5:
             print("You're Out!")
             break
@@ -39,28 +39,28 @@ for i in range(3):
             x = print("You Got a Single!")
             break
         else:
-            print("you hit high enough to get more than a single")
+            print("You hit high enough to get more than a single.")
             x = True
             break
 # Uses overall_speed_of_ball and launch_angle to determine if the ball is hit to the outfield or not
     while x == True:
         if overall_speed_of_ball  >= 20 and launch_angle <= 50:
-            print("you got a single!")
+            print("You got a single!")
             break
         elif overall_speed_of_ball >= 21 and overall_speed_of_ball <= 60 and launch_angle >= 91:
-            print("You got to the outfield")
+            print("You got to the outfield.")
             ball_catch = overall_speed_of_ball / speed_of_outfielder
 # Uses ball_catch to determine if the outfielder can reach the ball in time and determine how many bases you get
             if ball_catch <= 7:
-                print ("ball caught")
+                print ("Ball caught.")
                 break
             elif ball_catch >= 8 and ball_catch <= 10:
-                print("You got a single")
+                print("You got a single.")
             elif ball_catch >= 11 and ball_catch <= 17:
-                print("You got a double")
+                print("You got a double.")
                 break
             elif ball_catch >= 18 and ball_catch <= 30:
-                print("You got a triple")
+                print("You got a triple.")
                 break
             else:
                 print("Home Run!")
