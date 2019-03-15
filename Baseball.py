@@ -11,17 +11,16 @@ It is able to determine this by using the speed of the pitch, launch angle, spee
 # This is used to give me a sense of who the person is
 def introduction(x, y, z, a, b, c):
     print (x)
-    print (y)
-    print (z)
-    print (a)
-    print (b)
-    print (c)
+    print("What is your name:", y)
+    print("Do you prefer wood or metal bats:", z)
+    print("How old are you:", z)
+    print("How tall are you:", a)
+    print(c)
 introduction ("Hello, if you are a baseball player please follow the commands below")
-introduction (int(input("What is your name?")))
-introduction (int(input("Do you prefer wood or metal bats?")))
-introduction (int(input("How old are you?")))
-introduction (int(input("How tall are you?")))
-introduction (int(input("Good luck and have fun!")))
+introduction (int(input))
+introduction (int(input))
+introduction (int(input))
+introduction ("Good luck and have fun!")
 # This part of code is used to find all of the variables for the full code below
 for i in range(3):
     speed_of_pitch = int(input("What is the speed of the pitch?: "))
