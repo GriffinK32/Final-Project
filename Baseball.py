@@ -9,18 +9,15 @@ It also determines if the hit will either be a single, double, triple, or home r
 It is able to determine this by using the speed of the pitch, launch angle, speed of bat, and speed of outfielder.
 '''
 # This is used to give me a sense of who the person is
-def introduction(x, y, z, a, b, c):
+def introduction(x):
     print (x)
-    print("What is your name:", y)
-    print("Do you prefer wood or metal bats:", z)
-    print("How old are you:", z)
-    print("How tall are you:", a)
-    print(c)
+
 introduction ("Hello, if you are a baseball player please follow the commands below")
-introduction (int(input))
-introduction (int(input))
-introduction (int(input))
-introduction ("Good luck and have fun!")
+def ask_name(name):
+    print (name)
+ask_name (input("What is your name? "))
+def ask_age(age):
+    ask_age (input("What is your age? "))
 # This part of code is used to find all of the variables for the full code below
 for i in range(3):
     speed_of_pitch = int(input("What is the speed of the pitch?: "))
